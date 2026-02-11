@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט לפריקון</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Secular+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: #fcfdfa;
+        }
+        .header-font {
+            font-family: 'Secular One', sans-serif;
+        }
+        .price-tag::before {
+            content: '₪';
+            margin-left: 2px;
+        }
+        .item-row:hover {
+            background-color: #f7fee7;
+        }
+        .brand-text {
+            color: #14532d;
+        }
+    </style>
+</head>
+<body class="text-gray-800 pb-12 pt-8">
+
+    <main class="max-w-3xl mx-auto px-4 relative z-10">
+        
+        <!-- Logo/Brand Name Replacement -->
+        <div class="text-center mb-10">
+            <h1 class="header-font text-6xl brand-text mb-2">לפריקון</h1>
+            <div class="h-1 w-24 bg-yellow-500 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Specials -->
+        <section class="bg-white rounded-2xl shadow-xl p-6 mb-10 border-t-4 border-yellow-500">
+            <h2 class="header-font text-2xl mb-5 flex items-center gap-2 text-green-900">
+                <span class="text-yellow-500">⭐</span> מבצעים
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="flex justify-between items-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <span class="font-semibold">קפוצ׳ינו ו-2 מאפים</span>
+                    <span class="price-tag font-bold text-green-700 text-xl">20</span>
+                </div>
+                <div class="flex justify-between items-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <span class="font-semibold">קפוצ׳ינו ו-4 מאפים</span>
+                    <span class="price-tag font-bold text-green-700 text-xl">28</span>
+                </div>
+                <div class="flex justify-between items-center p-4 rounded-xl bg-gray-50 border border-gray-100">
+                    <span class="font-semibold">קפה וכריכון</span>
+                    <span class="price-tag font-bold text-green-700 text-xl">24</span>
+                </div>
+                <div class="flex justify-between items-center p-4 rounded-xl bg-green-900 text-white shadow-md">
+                    <span class="font-bold">ארוחת בוקר</span>
+                    <span class="price-tag font-bold text-xl">45</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffee Menu -->
+        <section class="mb-12">
+            <h2 class="header-font text-3xl mb-6 text-center text-green-900 flex justify-center items-center gap-3">
+                <span class="h-px bg-green-200 flex-grow"></span>
+                קפה ושתייה
+                <span class="h-px bg-green-200 flex-grow"></span>
+            </h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 divide-y divide-gray-50 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">קפוצ׳ינו</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b">
+                        <span class="font-medium text-lg">אספרסו</span>
+                        <span class="price-tag font-bold text-gray-600">8</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">אספרסו כפול</span>
+                        <span class="price-tag font-bold text-gray-600">10</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b">
+                        <span class="font-medium text-lg">אמריקנו</span>
+                        <span class="price-tag font-bold text-gray-600">12</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">פלאט וייט</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b">
+                        <span class="font-medium text-lg">קפה שחור</span>
+                        <span class="price-tag font-bold text-gray-600">5</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">קורטדו</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b">
+                        <span class="font-medium text-lg">שוקו</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">תה</span>
+                        <span class="price-tag font-bold text-gray-600">10</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b">
+                        <span class="font-medium text-lg">לאטה</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center border-b md:border-l">
+                        <span class="font-medium text-lg">צ׳אי לאטה</span>
+                        <span class="price-tag font-bold text-gray-600">14</span>
+                    </div>
+                    <div class="p-4 item-row flex justify-between items-center bg-green-50">
+                        <span class="font-bold text-green-900 text-lg">מאצ׳ה</span>
+                        <span class="price-tag font-bold text-green-800">24</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sandwiches -->
+        <section class="mb-12">
+            <h2 class="header-font text-3xl mb-6 text-center text-green-900 flex justify-center items-center gap-3">
+                <span class="h-px bg-green-200 flex-grow"></span>
+                כריכים
+                <span class="h-px bg-green-200 flex-grow"></span>
+            </h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-r-8 border-green-700">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="font-bold text-xl">כריך גבינה צהובה</h3>
+                        <span class="price-tag font-bold text-lg">36</span>
+                    </div>
+                    <p class="text-sm text-gray-500">גבינה צהובה, בייגל, שמנת, עגבניות, פטרוזיליה, נענע, פסטו</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-r-8 border-green-700">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="font-bold text-xl">כריך בולגרית</h3>
+                        <span class="price-tag font-bold text-lg">36</span>
+                    </div>
+                    <p class="text-sm text-gray-500">בייגל, בולגרית, מלפפון, עגבניה, חסה, פטריות, רוטב לבחירה</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-r-8 border-green-700">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="font-bold text-xl">כריך טונה</h3>
+                        <span class="price-tag font-bold text-lg">36</span>
+                    </div>
+                    <p class="text-sm text-gray-500">אלף איים, טונה, חסה, פטרוזיליה, מלפפון, עגבניה, רוטב לבחירה</p>
+                </div>
+
+                <div class="bg-orange-50 p-4 rounded-2xl border border-orange-100">
+                    <div class="flex justify-between items-center mb-1">
+                        <h3 class="font-bold text-lg text-orange-900">בייגל ילדים 🎈</h3>
+                        <span class="price-tag font-bold text-orange-800">20</span>
+                    </div>
+                    <p class="text-sm text-orange-700 font-medium">צהובה, עגבניה וגבינת שמנת</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toasts & Focaccia -->
+        <section class="mb-12">
+            <h2 class="header-font text-3xl mb-6 text-center text-green-900 flex justify-center items-center gap-3">
+                <span class="h-px bg-green-200 flex-grow"></span>
+                חם מהתנור
+                <span class="h-px bg-green-200 flex-grow"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm text-center border border-gray-100">
+                    <h3 class="font-bold text-xl mb-1">טוסט אלפרדו</h3>
+                    <p class="text-xs text-gray-500 mb-3">רוטב אלפרדו, מוצרלה, תוספות לבחירה</p>
+                    <span class="price-tag font-bold text-xl text-green-800">36</span>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm text-center border border-gray-100">
+                    <h3 class="font-bold text-xl mb-1">טוסט פיצה</h3>
+                    <p class="text-xs text-gray-500 mb-3">רוטב פיצה, גבינה צהובה, תוספות לבחירה</p>
+                    <span class="price-tag font-bold text-xl text-green-800">36</span>
+                </div>
+                <div class="md:col-span-2 bg-green-50 p-6 rounded-2xl border border-green-100 text-center">
+                    <h3 class="font-bold text-2xl text-green-900 mb-1 italic">פוקאצ׳ה בנדה</h3>
+                    <p class="text-green-800 opacity-80">רוטב אלפרדו, מוצרלה איכותית</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Salads -->
+        <section class="mb-12">
+            <h2 class="header-font text-3xl mb-6 text-center text-green-900 flex justify-center items-center gap-3">
+                <span class="h-px bg-green-200 flex-grow"></span>
+                סלטים
+                <span class="h-px bg-green-200 flex-grow"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-xl mb-2 text-green-800">🥗 סלט קצוץ</h3>
+                    <p class="text-sm text-gray-600">בצל סגול, מלפפון, עגבניה</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-xl mb-2 text-green-800">🍃 סלט גינה</h3>
+                    <p class="text-sm text-gray-600">גמבה, גזר, מלפפון, עגבניה, פטריות</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-10 text-gray-400">
+        <p class="text-sm italic">לפריקון - קפה ומאפים טריים</p>
+    </footer>
+
+</body>
+</html>
